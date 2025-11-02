@@ -1,5 +1,6 @@
 package airhacks;
 
+import software.amazon.awscdk.CfnOutput;
 import software.amazon.awscdk.Stack;
 import software.amazon.awscdk.StackProps;
 import software.amazon.awscdk.services.bedrock.agentcore.alpha.AgentRuntimeArtifact;
@@ -18,5 +19,9 @@ public class AgentCoreStack
                 .agentRuntimeArtifact(agentArtifact)
                 .networkConfiguration(RuntimeNetworkConfiguration.usingPublicNetwork())
                 .build();
+        var agentRuntimeId = runtime.getAgentRuntimeId();
+        CfnOutput.Builder.create(this, "AgentRuntimeId").value(agentRuntimeId).build();
+        var agentArn = runtime.getAgentRuntimeArn();
+        CfnOutput.Builder.create(this, "AgentArn").value(agentArn).build();
     }
 }
