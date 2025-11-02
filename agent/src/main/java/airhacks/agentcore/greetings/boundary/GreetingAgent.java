@@ -1,7 +1,6 @@
-package airhacks;
+package airhacks.agentcore.greetings.boundary;
 
 import java.time.Instant;
-import java.util.Map;
 
 import jakarta.json.Json;
 import jakarta.ws.rs.GET;
