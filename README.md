@@ -8,6 +8,13 @@
 - **[agent-st](agent-st)**: System tests for the agent
 - **[cdk](cdk)**: AWS CDK infrastructure deploying the agent as AgentCore Runtime
 
+## Prerequisites
+
+- Java 25
+- Maven
+- AWS credentials configured (via `aws configure` or environment variables)
+- CDK bootstrapped in target account and region: `cdk bootstrap`
+
 ## Build and Deploy
 
 ```bash
