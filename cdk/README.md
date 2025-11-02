@@ -1,4 +1,20 @@
-# AWS CDK Java Boilerplate
+# CDK Infrastructure
 
+Deploys the Quarkus agent as AWS Bedrock Agent Runtime.
 
-See you at: [airhacks.live](https://airhacks.live)
+## Stack
+
+`AgentCoreStack` creates:
+- Agent Runtime from Docker asset
+- Public network configuration
+- Outputs: AgentRuntimeId and AgentArn
+
+## Configuration
+
+Region is configured via `ZCfg` from `stack.props.region` property.
+
+## Deploy
+
+```bash
+../buildAndDeployDontAsk.sh
+```
