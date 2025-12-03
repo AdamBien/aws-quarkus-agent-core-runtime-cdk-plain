@@ -25,12 +25,12 @@
         <dependency>
             <groupId>software.amazon.awscdk</groupId>
             <artifactId>aws-cdk-lib</artifactId>
-            <version>2.221.0</version>
+            <version>2.231.0</version>
         </dependency>
         <dependency>
             <groupId>software.amazon.awscdk</groupId>
             <artifactId>bedrock-agentcore-alpha</artifactId>
-            <version>2.221.0-alpha.0</version>
+            <version>2.231.0-alpha.0</version>
         </dependency>
         <dependency>
             <groupId>software.constructs</groupId>
