@@ -12,6 +12,7 @@
 
 - Java 25
 - Maven
+- Docker (running prior to provisioning)
 - AWS credentials configured (via `aws configure` or environment variables)
 - CDK bootstrapped in target account and region: `cdk bootstrap`
 
