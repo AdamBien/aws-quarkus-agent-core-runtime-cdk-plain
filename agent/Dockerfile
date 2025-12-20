@@ -78,6 +78,7 @@
 #   accessed directly. (example: "foo.example.com,bar.example.com")
 #
 ###
+# https://docs.aws.amazon.com/corretto/latest/corretto-25-ug/docker-install.html
 FROM amazoncorretto:25-jdk
 
 ENV LANGUAGE='en_US:en'
